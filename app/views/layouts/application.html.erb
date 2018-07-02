@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Izufast || Ruby On Rails Development Company in Indonesia</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,400i,600,600i,700,700i,900" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <!-- Add the slick-theme -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <!-- Add the slick-theme -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    	<div class="container-fluid">
+          <header id="header_nav" class="header">
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+  				<%= link_to :root, :class => 'navbar-brand' do %>
+  					<img  class ="nav-brand-img"src="https://assets.kitabisa.com/images/logo__ktbs.svg" alt="Ruby On Rails Development Company in Indonesia">
+  				<% end %>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="container">
+                      <div class="row">
+                          <div class="collapse navbar-collapse" id="navbarCollapse">
+                              <ul class="navbar-nav mr-auto">
+                                  <li class="nav-item active">
+                                      <a class="nav-link nav-link__active" href="#">HOME <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#unggulan">WORKS</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#">SERVICE</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#">ABOUT US</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#">CONTACT US</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+          </header>
+      </div>
+  	<main role="main-container">
+
+      	<%= yield %>
+          <!-- Footer -->
+  		<footer class="container footer">
+  			<div class="row footer__ysk">
+  				<div class="col-6 col-md">
+  					<h5 class="footer__ysk--title">PROGRAM YAYASAN</h5>
+  					<ul class="list-unstyled text-small footer__ysk--ul">
+  						<li><a class="text-muted footer__ysk--li" href="#">Infaq & Sodaqoh</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Rumah Qu'ran</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Lazzez</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Motor Dai</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Another one</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Program Lainnya</a></li>
+  					</ul>
+  				</div>
+  				<div class="col-6 col-md">
+  					<h5 class="footer__ysk--title">PENGGALANGAN DANA</h5>
+  					<ul class="list-unstyled text-small footer__ysk--ul">
+  						<li><a class="text-muted footer__ysk--li" href="#">Donatur Tetap</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Fundraiser</a></li>
+  					</ul>
+  				</div>
+  				<div class="col-6 col-md">
+  					<h5 class="footer__ysk--title">TENTANNG YSK</h5>
+  					<ul class="list-unstyled text-small footer__ysk--ul">
+  						<li><a class="text-muted footer__ysk--li" href="#">Apa itu YSK?</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Artikel</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">FAQ</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#>">Karir</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Our Team</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Kebijakan Privasi</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">Syarat dan Ketentuan</a></li>
+  					</ul>
+  				</div>
+  				<div class="col-6 col-md">
+  					<h5 class="footer__ysk--title">KONTAK</h5>
+  					<ul class="list-unstyled text-small footer__ysk--ul">
+  						<li><a class="text-muted footer__ysk--li footer__ysk--ajwad" href="#">Yayasan Sedekah Kreatif</a></li>
+  						<li><a class="text-muted footer__ysk--li" href="#">
+  							Jl. Condet Raya No.50, RT.11/RW.3, Batu Ampar, Kramatjati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13530
+  						</a></li>
+  						<li><a class="text-muted footer__ysk--li footer__ysk--last" href="#">087775555507 / (021) 271180</a>
+  					</ul>
+  				</div>
+  			</div>
+  			<div class="row footer__copyright">
+  				<div class="col-12 col-md-8">
+  					<div class="footer__copyright--item">
+  						@2018. Yayasan Sedekah Kreatif. All Rights Reserved
+  					</div>
+  				</div>
+  				<div class="col-6 col-md-4">
+  					<ul class="list-unstyled footer__copyright--ul">
+  						<li class="footer__copyright--li"><a class="text-muted" href="https://www.facebook.com/sedekahkreatifyys/" target="__blank"><i class="fab fa-facebook-f footer__copyright--icon"></i></a></li>
+  						<li class="footer__copyright--li"><a class="text-muted" href="#" target="__blank"><i class="fab fa-twitter footer__copyright--icon"></i></a></li>
+  						<li class="footer__copyright--li"><a class="text-muted" href="https://www.instagram.com/sedekahkreatif/" target="__blank"><i class="fab fa-instagram footer__copyright--icon"></i></a></li>
+  						<li class="footer__copyright--li"><a class="text-muted" href="#" target="__blank"><i class="fab fa-youtube footer__copyright--icon"></i></a></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</footer>
+      </main>
+
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  	<%= javascript_include_tag "application" %>
+
+  	<%# Our animation %>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  	<%# Counter Money %>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  	<!-- Add the clipboard -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+    </body>
+</html>
