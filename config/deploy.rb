@@ -13,7 +13,6 @@ set :deploy_to, "home/deploy/izufast"
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
-ssh_options[:forward_agent] = true
 
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
@@ -42,3 +41,16 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+
+
+namespace :deploy do
+
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      within release_path do
+        # execute :rake, 'cache:clear'
+        # invoke 'delayed_job:restart'
+      end
+    end
+  end
+end
