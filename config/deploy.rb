@@ -2,7 +2,7 @@
 lock "~> 3.10.1"
 
 set :application, "izufast"
-set :repo_url, "git@github.com:zuhrisaifudin/izufast.git"
+set :repo_url, "https://github.com/zuhrisaifudin/izufast.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
