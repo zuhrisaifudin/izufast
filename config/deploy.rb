@@ -28,17 +28,9 @@ set :deploy_to, "home/deploy/izufast"
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
-set :linked_dirs, fetch(:linked_dirs, []).push(
-  'log',
-  'tmp/pids',
-  'tmp/cache',
-  'tmp/sockets',
-  'public/system',
-  'public/img',
-  'public/fonts',
-  'public/uploads',
-  'public/apps'
-)
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+
+
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
