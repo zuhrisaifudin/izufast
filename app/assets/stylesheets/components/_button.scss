@@ -1,0 +1,65 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+        position: relative;
+        cursor: pointer;
+        outline: none !important;
+    }
+    &:hover{
+       transform: translateY(-3px);
+       box-shadow: 0 10px 20px rgba(0,0,0,.2);
+
+
+       &::after{
+           transform: scaleX(1.4) scaleY(1.6) ;
+           opacity: 0;
+
+       }
+   }
+   &:active,
+   &:focus{
+       outline: none;
+       transform: translateY(-1px);
+   }
+   &:after{
+       content: "";
+       display: inline-block;
+       height:100%;
+       width: 100%;
+       border-radius: 100px;
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: -1;
+       transition: all .4s;
+
+     }
+     &--animated{
+         animation: moveInBottom .5s ease-out .75s;
+         animation-fill-mode: backwards;
+     }
+    &__get{
+      width: 206px;
+      height: 48px;
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 17px;
+      color: #fff;
+      background-image: linear-gradient(200deg, #7496f6 0%, #00b2f4 100%);
+      outline: none !important;
+      margin-top: 55px;
+      border: none;
+      border-radius: 3px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      &:before{
+        content: url("/img/arrow.png");
+        position: absolute;
+        margin-left: -17px;
+
+      }
+    }
+}
